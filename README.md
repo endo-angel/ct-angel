@@ -21,28 +21,28 @@ From Renmin Hospital of Wuhan University (Wuhan, Hubei province, China).
 2. Instruments
 Included Optima CT680, Revolution CT and Bright Speed CT scanner (all GE Healthcare).
 ### Datasets  amount
-1. Raw datasets
+#### Raw datasets
 * 46,096 CT images from 106 patients
     * 25989 images from 51 COVID19 patients
     * 20107 images from 55 controls
-2. Selected datasets(after filtering those images without good pneumonia)
+#### Selected datasets(after filtering those images without good pneumonia)
 * 35355  CT images selected
     * 20886 images from 51 COVID19 patients
     * 14469 images from 55 controls
 ## Model  development
 ### Workflow  diagram 
 ### Model  training
-1. Training a model for extracting valid regions of CT images
-    We first trained UNet++ to extract valid areas in CT images using 289 randomly selected CT images and tested it in other 600 randomly selected CT images. The training images were labelled with the smallest rectangle containing all valid areas by researchers. The model successfully extracted valid areas in 600 images in testing set with an accuracy of 100%.
-2. Training a model for detecting suspicious lesions in CT images
-    For detecting suspicious lesions on CT scans, 691 images of COVID-19 pneumonia infection lesions labelled by radiologists and 300 images randomly selected from patients of non-COVID-19 pneumonia were used. Taking the raw CT scan images as input with a resolution of 512×512, and the labelled map from the expert as output, UNet++ was used to train in Keras in an image-to-image manner. The suspicious region was predicted under a confidence cutoff value of 0.50, and a prediction box pixel of over 25. 
+#### Training a model for extracting valid regions of CT images
+   We first trained UNet++ to extract valid areas in CT images using 289 randomly selected CT images and tested it in other 600 randomly selected CT images. The training images were labelled with the smallest rectangle containing all valid areas by researchers. The model successfully extracted valid areas in 600 images in testing set with an accuracy of 100%.
+#### Training a model for detecting suspicious lesions in CT images
+   For detecting suspicious lesions on CT scans, 691 images of COVID-19 pneumonia infection lesions labelled by radiologists and 300 images randomly selected from patients of non-COVID-19 pneumonia were used. Taking the raw CT scan images as input with a resolution of 512×512, and the labelled map from the expert as output, UNet++ was used to train in Keras in an image-to-image manner. The suspicious region was predicted under a confidence cutoff value of 0.50, and a prediction box pixel of over 25. 
 ### Model  testing
-1. Testing datasets
+#### Testing datasets
 | Methods | COVID-19 Patients amount | COVID-19 images amount | Other Patients amount | Other images amount |
 | :----: | :----: | :----: | :----: | :----: |
 | Retrospective testing | 11 | 4382 | 31 | 9369 |
 | Prospective testing | 16 | / | 11 | / |
-2. Testing results
+#### Testing results
 | Methods | Sensitivity | Specificity | Accuracy | PPV | NPV |
 | :----: | :----: | :----: | :----: | :----: | :----: |
 | Retrospective testing | |||||
