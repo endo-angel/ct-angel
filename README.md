@@ -23,12 +23,12 @@ Included Optima CT680, Revolution CT and Bright Speed CT scanner (all GE Healthc
 ### Datasets  amount
 1. Raw datasets
 * 46,096 CT images from 106 patients
-    25989 images from 51 COVID19 patients
-    20107 images from 55 controls
+    * 25989 images from 51 COVID19 patients
+    * 20107 images from 55 controls
 2. Selected datasets(after filtering those images without good pneumonia)
 * 35355  CT images selected
-    20886 images from 51 COVID19 patients
-    14469 images from 55 controls
+    * 20886 images from 51 COVID19 patients
+    * 14469 images from 55 controls
 ## Model  development
 ### Workflow  diagram 
 ### Model  training
