@@ -16,9 +16,9 @@
 Computed tomography (CT) is the preferred imaging method for diagnosing 2019 novel coronavirus (COVID19) pneumonia. CT-Angel aimed to construct a system based on deep learning for detecting COVID-19 pneumonia on high resolution CT, relieve working pressure of radiologists and contribute to the control of the epidemic.
 ## Datasets
 ### Datasets  source
-1. Hospital
+* Hospital
 From Renmin Hospital of Wuhan University (Wuhan, Hubei province, China). 
-2. Instruments
+* Instruments
 Included Optima CT680, Revolution CT and Bright Speed CT scanner (all GE Healthcare).
 ### Datasets  amount
 #### Raw datasets
@@ -49,8 +49,9 @@ Included Optima CT680, Revolution CT and Bright Speed CT scanner (all GE Healthc
 | Per patient | 100% | 93.55% |95.24%|84.62%|100%|
 | Per image | 94.34% | 99.16% |98.85%|88.37%|99.61%|
 | Prospective testing(Per patient) | 100% | 81.82% |92.59%|88.89%|100%|
+
 `Ps: PPV: positive prediction value,NPV: negative prediction value.`
-* Representative images of model testing
+#### Representative images of model testing
 ## Usage
 ### Environmental  dependence
 | Tools | Version |
