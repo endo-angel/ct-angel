@@ -1,4 +1,4 @@
-![Image](http://47.116.58.103/ct-model/static/ct-imgs/logo.png)
+![Logo](http://47.116.58.103/ct-model/static/ct-imgs/logo.png)
 # CT-Angel
 ---
 
@@ -15,7 +15,7 @@
 ## 1. Background
 Computed tomography (CT) is the preferred imaging method for diagnosing 2019 novel coronavirus (COVID19) pneumonia. CT-Angel aimed to construct a system based on deep learning for detecting COVID-19 pneumonia on high resolution CT, relieve working pressure of radiologists and contribute to the control of the epidemic.
 
-![Image](http://47.116.58.103/ct-model/static/ct-imgs/background.png)
+![Background](http://47.116.58.103/ct-model/static/ct-imgs/background.png)
 ## 2. Datasets
 ### 2.1 Datasets  source
 * Hospital
@@ -33,7 +33,7 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
     * 14469 images from 55 controls
 ## 3. Model  development
 ### 3.1 Workflow  diagram 
-![Image](http://47.116.58.103/ct-model/static/ct-imgs/workflow.png)
+![Workflow](http://47.116.58.103/ct-model/static/ct-imgs/workflow.png)
 ### 3.2 Model  training
 #### 3.2.1 Training a model for extracting valid regions of CT images
    We first trained UNet++ to extract valid areas in CT images using 289 randomly selected CT images and tested it in other 600 randomly selected CT images. The training images were labelled with the smallest rectangle containing all valid areas by researchers. The model successfully extracted valid areas in 600 images in testing set with an accuracy of 100%.
@@ -55,7 +55,7 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
 
 `Ps: PPV: positive prediction value,NPV: negative prediction value.`
 #### 3.4 Representative images of model testing
-![Image](http://47.116.58.103/ct-model/static/ct-imgs/results.png)
+![Results](http://47.116.58.103/ct-model/static/ct-imgs/results.png)
 
 * A. Computed tomography (CT) images of COVID19 pneumonia. The predictions between the artificial intelligence model and radiologists were consistent. Green boxes, labels from radiologists; red boxes, labels from the model. 
 * B. CT images of the control. 
@@ -99,3 +99,9 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
 └── tools
 ```
 ## 6. About the author
+* Author
+  * Renmin Hospital of Wuhan University & Wuhan EndoAngel Medical Technology Co., Ltd.
+* E-mail
+  * shan.hu@ai-endoangel.com
+  * kuo.zhang@ai-endoangel.com
+  * jinzhu.liu@ai-endoangel.com
