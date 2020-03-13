@@ -56,6 +56,8 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
 `Ps: PPV: positive prediction value,NPV: negative prediction value.`
 #### 3.4 Representative images of model testing
 ![Image](http://47.116.58.103/ct-model/static/ct-imgs/results.png)
+ `A. Computed tomography (CT) images of COVID19 pneumonia. The predictions between the artificial intelligence model and radiologists were consistent. Green boxes, labels from radiologists; red boxes, labels from the model. 
+ B. CT images of the control. The first image is an ordinary bacterial pneumonia, showing a consolidation of the right lower lobe. The second image has a tumorous lesion in the lung, showing a mass in the left upper lobe, with burrs seen at the edges, and showing leaf-like growth with vacuoles inside. The third image is a secondary pulmonary tuberculosis, showing a left apical fibrous cord. The fourth image is a bronchiectasis complicated with infection, showing bronchodilation and expansion, cystic changes, and surrounding patches of infection. The fifth image shows normal lungs.`
 ## 4. Usage
 ### 4.1 Environmental  dependence
 | Tools | Version |
