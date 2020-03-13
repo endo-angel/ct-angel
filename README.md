@@ -33,6 +33,7 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
     * 14469 images from 55 controls
 ## 3. Model  development
 ### 3.1 Workflow  diagram 
+![Image](http://47.116.58.103/ct-model/static/ct-imgs/workflow.png)
 ### 3.2 Model  training
 #### 3.2.1 Training a model for extracting valid regions of CT images
    We first trained UNet++ to extract valid areas in CT images using 289 randomly selected CT images and tested it in other 600 randomly selected CT images. The training images were labelled with the smallest rectangle containing all valid areas by researchers. The model successfully extracted valid areas in 600 images in testing set with an accuracy of 100%.
@@ -54,6 +55,7 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
 
 `Ps: PPV: positive prediction value,NPV: negative prediction value.`
 #### 3.4 Representative images of model testing
+![Image](http://47.116.58.103/ct-model/static/ct-imgs/results.png)
 ## 4. Usage
 ### 4.1 Environmental  dependence
 | Tools | Version |
