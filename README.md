@@ -14,6 +14,7 @@
 ---
 ## 1. Background
 Computed tomography (CT) is the preferred imaging method for diagnosing 2019 novel coronavirus (COVID19) pneumonia. CT-Angel aimed to construct a system based on deep learning for detecting COVID-19 pneumonia on high resolution CT, relieve working pressure of radiologists and contribute to the control of the epidemic.
+![Image](https://github.com/UMU689/ct-angel-imgs/blob/master/.png)
 ## 2. Datasets
 ### 2.1 Datasets  source
 * Hospital
