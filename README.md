@@ -55,7 +55,7 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
  ```
  Ps: PPV: positive prediction value,NPV: negative prediction value.
  ```
-#### 3.4 Representative images of model testing
+### 3.4 Representative images of model testing
 ![Results](http://47.116.58.103/ct-model/static/ct-imgs/results.png)
 
 * A. Computed tomography (CT) images of COVID19 pneumonia. The predictions between the artificial intelligence model and radiologists were consistent. Green boxes, labels from radiologists; red boxes, labels from the model. 
