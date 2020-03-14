@@ -62,8 +62,8 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
 ## 4. Usage
 ### 4.1 Environmental  dependence
 #### 4.1.1 Hardware reference configuration
-| Hardware | configuration |
-| Operating system | Microsoft Windows 10 64-bit|
+| Hardware | Configuration |
+| Operating system | Microsoft Windows 10 64-bit |
 | :----: | :----: |
 | Cpu | Intel Corei7-8700 3.2GHz |
 | RAM | >=16G |
@@ -84,12 +84,15 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
 #### 4.2.2 Download and install the required toolkit
    * [Python 3.5+](https://www.anaconda.com/download/) https://www.anaconda.com/download/
    
-     `It is recommended to download the anaconda3 integrated environment directly, which is more convenient.`
+    ```
+     It is recommended to download the anaconda3 integrated environment directly, which is more convenient.
+    ```
    * Tensorflow 1.13.1
      We chose to install TensorFlow-GPU on Anaconda:
      1. Create an environment dedicated to TensorFlow
-     
-        `conda create -n tf python=3.6`
+        ```
+        conda create -n tf python=3.6
+        ```
      2. Then enter this environment. In order to ensure that there are no problems with the installation, it is recommended to update the pip and setuptool tools
         ```
         activate tf #Enter the tensorflow environment
@@ -98,24 +101,25 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
         pip install -–upgrade setuptools
         ```
      3. Then you can install TensorFlow:
-     
-        `pip install tensorflow-gpu==1.13.1`
-        
+        ```
+        pip install tensorflow-gpu==1.13.1
+        ```
      4. After the installation is complete, enter the python interpreter and import TensorFlow. If the import is successful, the installation is successful.
    * Keras 2.2.4 
-   
-     `pip install Keras==2.2.4`
-     
+   ```
+     pip install Keras==2.2.4
+   ```
    * Unet++
      We have prepared a package for Unet ++ for you, which is the folder named unet_pp.
    * OpenCV 3.4.2
-   
-     `pip install opencv-python==3.4.2`
-     
+   ```
+     pip install opencv-python==3.4.2
+   ```
    * [CUDA 10.1](https://developer.nvidia.com/cuda-downloads) https://developer.nvidia.com/cuda-downloads
    * [CUDnn 10](https://developer.nvidia.com/rdp/cudnn-download) https://developer.nvidia.com/rdp/cudnn-download
-   
-     `Need to register, install after registration.After decompression, place the three files in the corresponding directories of cuda.`
+   ```
+     Need to register, install after registration.After decompression, place the three files in the corresponding directories of cuda.
+   ```
 ## 5. Directory Structure
 ```
 ├── Readme.md                   // help
