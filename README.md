@@ -152,7 +152,7 @@ to start our project and get the prediction result of your own CT images.
 │      └── test_labels                   // ct-angel model test_labels
 │          └── DJ20200112A0189(243).jpg  // test_labels sample
 │   ├── sample                           // ct-angel prediction sample
-│      └── sample01.jpg                 // sample image
+│      └── sample01.jpg                  // sample image
 │   ├── unet_pp                          // unet++ package
 │   └── ct_angel_train.ipynb             // ct-angel-train-code
 ```
