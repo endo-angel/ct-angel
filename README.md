@@ -61,10 +61,10 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
 * B. CT images of the control. 
 ## 4. Usage
 ### 4.1 Environmental  dependence
-#### 4.1.1 Hardware reference configuration
-| Hardware | Configuration |
-| Operating system | Microsoft Windows 10 64-bit |
+#### 4.1.1 Computer reference configuration
+| Item | Configuration |
 | :----: | :----: |
+| Operating system | Microsoft Windows 10 64-bit |
 | Cpu | Intel Corei7-8700 3.2GHz |
 | RAM | >=16G |
 | Hard disk | 256G solid state hard disk + 1T mechanical hard disk|
@@ -87,13 +87,14 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
     ```
      It is recommended to download the anaconda3 integrated environment directly, which is more convenient.
     ```
+    
    * Tensorflow 1.13.1
      We chose to install TensorFlow-GPU on Anaconda:
-     1. Create an environment dedicated to TensorFlow
+     1. Create an environment dedicated to TensorFlow：
         ```
         conda create -n tf python=3.6
         ```
-     2. Then enter this environment. In order to ensure that there are no problems with the installation, it is recommended to update the pip and setuptool tools
+     2. Then enter this environment. In order to ensure that there are no problems with the installation, it is recommended to update the pip and setuptool tools：
         ```
         activate tf #Enter the tensorflow environment
         deactivate #Exit the tensorflow environment
