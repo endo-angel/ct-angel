@@ -62,6 +62,7 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
 ## 4. Usage
 ### 4.1 Environmental  dependence
 #### 4.1.1 Hardware reference configuration
+| Hardware | configuration |
 | Operating system | Microsoft Windows 10 64-bit|
 | :----: | :----: |
 | Cpu | Intel Corei7-8700 3.2GHz |
@@ -90,14 +91,12 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
      
         `conda create -n tf python=3.6`
      2. Then enter this environment. In order to ensure that there are no problems with the installation, it is recommended to update the pip and setuptool tools
-     
-        `activate tf #Enter the tensorflow environment`
-        
-        `deactivate #Exit the tensorflow environment`
-        
-        `python -m pip install --upgrade pip`
-        
-        `pip install -–upgrade setuptools`
+        ```
+        activate tf #Enter the tensorflow environment
+        deactivate #Exit the tensorflow environment
+        python -m pip install --upgrade pip 
+        pip install -–upgrade setuptools
+        ```
         
      3. Then you can install TensorFlow:
      
