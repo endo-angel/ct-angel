@@ -66,7 +66,7 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
 | Item | Configuration |
 | :----: | :----: |
 | Operating system | Microsoft Windows 10 64-bit |
-| Cpu | Intel Corei7-8700 3.2GHz |
+| CPU | Intel Corei7-8700 3.2GHz |
 | RAM | >=16G |
 | Hard disk | 256G solid state hard disk + 1T mechanical hard disk|
 | Graphics card | NVIDIA GeForce RTX 2080 (8G video memory) |
