@@ -130,7 +130,7 @@ extraction code：zide
 ```
 #### 4.2.4 Download our project
 #### 4.2.5 Run our project locally
-A jupyter file named ```ct_angel_train``` is provided in our project. You can follow the prompts of the code comments in the jupyter file to place the training pictures and corresponding mask pictures in the corresponding path and folder, and then run a jupyter file 
+A jupyter file named ```ct_angel_train``` is provided in our project. You can follow the prompts of the code comments in the jupyter file to place the training images and corresponding mask images in the corresponding path and folder, and then run a jupyter file 
 to start our project and get the prediction result of your own CT images.
 ## 5. Directory Structure
 ```
