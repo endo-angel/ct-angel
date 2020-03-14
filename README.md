@@ -125,8 +125,8 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
 #### 4.2.3 Download our trained model
 We open sourced two models we trained: the model for extracting valid regions of CT images and the model for detecting suspicious lesions in CT images. The download link is provided below:
 ```
-link：https://pan.baidu.com/s/1zwDztKY0zSvhtBE48J-2vw 
-extraction code：zide
+link：https://pan.baidu.com/s/1OWxNBVvL3kINV1Lf_lrdlA
+extraction code：q916
 ```
 #### 4.2.4 Download our project
 #### 4.2.5 Run our project locally
