@@ -97,7 +97,6 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
         python -m pip install --upgrade pip 
         pip install -–upgrade setuptools
         ```
-        
      3. Then you can install TensorFlow:
      
         `pip install tensorflow-gpu==1.13.1`
