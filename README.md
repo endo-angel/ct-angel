@@ -79,7 +79,6 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
 | OpenCV | 3.4.2 |
 | CUDA | 10.1 |
 ### 4.2 Instructions for use
-### Instructions for use
 #### 4.2.1 Ready to adapt the hardware
 #### 4.2.2 Download and install the required toolkit
    * [Python 3.5+](https://www.anaconda.com/download/) https://www.anaconda.com/download/
@@ -121,6 +120,16 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
    ```
      Need to register, install after registration.After decompression, place the three files in the corresponding directories of cuda.
    ```
+#### 4.2.3 Download our trained model
+We open sourced two models we trained: the model for extracting valid regions of CT images and the model for detecting suspicious lesions in CT images. The download links are provided below:
+```
+link：https://pan.baidu.com/s/1zwDztKY0zSvhtBE48J-2vw 
+extraction code：zide
+```
+#### 4.2.4 Download our project
+#### 4.2.5 Run our project locally
+A jupyter file named ```ct_angel_train``` is provided in our project. You can follow the prompts of the code comments in the jupyter file to place the training pictures and corresponding mask pictures in the corresponding path and folder, and then run a jupyter file 
+to start our project and get the prediction result of your own CT images.
 ## 5. Directory Structure
 ```
 ├── Readme.md                   // help
