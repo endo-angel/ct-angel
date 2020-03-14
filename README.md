@@ -83,11 +83,9 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
 #### 4.2.1 Ready to adapt the hardware
 #### 4.2.2 Download and install the required toolkit
    * [Python 3.5+](https://www.anaconda.com/download/) https://www.anaconda.com/download/
-   
-    ```
-     It is recommended to download the anaconda3 integrated environment directly, which is more convenient.
-    ```
-    
+   ```
+      It is recommended to download the anaconda3 integrated environment directly, which is more convenient.
+   ```
    * Tensorflow 1.13.1
      We chose to install TensorFlow-GPU on Anaconda:
      1. Create an environment dedicated to TensorFlow：
@@ -111,7 +109,7 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
      pip install Keras==2.2.4
    ```
    * Unet++
-     We have prepared a package for Unet ++ for you, which is the folder named unet_pp.
+    We have prepared a package for Unet ++ for you, which is the folder named unet_pp.
    * OpenCV 3.4.2
    ```
      pip install opencv-python==3.4.2
