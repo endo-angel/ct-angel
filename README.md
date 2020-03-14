@@ -88,6 +88,7 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
       It is recommended to download the anaconda3 integrated environment directly, which is more convenient.
    ```
    * Tensorflow 1.13.1
+     
      We chose to install TensorFlow-GPU on Anaconda:
      1. Create an environment dedicated to TensorFlow：
         ```
