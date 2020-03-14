@@ -35,9 +35,9 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
 ### 3.1 Workflow  diagram 
 ![Workflow](http://47.116.58.103/ct-model/static/ct-imgs/workflow.png)
 ### 3.2 Model  training
-#### 3.2.1 Training a model for extracting valid regions of CT images
+#### 3.2.1 Training the model for extracting valid regions of CT images
    We first trained UNet++ to extract valid areas in CT images using 289 randomly selected CT images and tested it in other 600 randomly selected CT images. The training images were labelled with the smallest rectangle containing all valid areas by researchers. The model successfully extracted valid areas in 600 images in testing set with an accuracy of 100%.
-#### 3.2.2 Training a model for detecting suspicious lesions in CT images
+#### 3.2.2 Training the model for detecting suspicious lesions in CT images
    For detecting suspicious lesions on CT scans, 691 images of COVID-19 pneumonia infection lesions labelled by radiologists and 300 images randomly selected from patients of non-COVID-19 pneumonia were used. Taking the raw CT scan images as input with a resolution of 512×512, and the labelled map from the expert as output, UNet++ was used to train in Keras in an image-to-image manner. The suspicious region was predicted under a confidence cutoff value of 0.50, and a prediction box pixel of over 25. 
 ### 3.3 Model  testing
 #### 3.3.1 Testing datasets
@@ -52,8 +52,9 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
 | Per patient | 100% | 93.55% |95.24%|84.62%|100%|
 | Per image | 94.34% | 99.16% |98.85%|88.37%|99.61%|
 | Prospective testing(Per patient) | 100% | 81.82% |92.59%|88.89%|100%|
-
-`Ps: PPV: positive prediction value,NPV: negative prediction value.`
+ ```
+ Ps: PPV: positive prediction value,NPV: negative prediction value.
+ ```
 #### 3.4 Representative images of model testing
 ![Results](http://47.116.58.103/ct-model/static/ct-imgs/results.png)
 
@@ -78,6 +79,7 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
 | Unet++ | / |
 | OpenCV | 3.4.2 |
 | CUDA | 10.1 |
+| CUDnn | 10 |
 ### 4.2 Instructions for use
 #### 4.2.1 Ready to adapt the hardware
 #### 4.2.2 Download and install the required toolkit
@@ -132,31 +134,27 @@ A jupyter file named ```ct_angel_train``` is provided in our project. You can fo
 to start our project and get the prediction result of your own CT images.
 ## 5. Directory Structure
 ```
-├── Readme.md                   // help
-├── app                         // 应用
-├── config                      // 配置
-│   ├── default.json
-│   ├── dev.json                // 开发环境
-│   ├── experiment.json         // 实验
-│   ├── index.js                // 配置控制
-│   ├── local.json              // 本地
-│   ├── production.json         // 生产环境
-│   └── test.json               // 测试环境
-├── data
-├── doc                         // 文档
-├── environment
-├── gulpfile.js
-├── locales
-├── logger-service.js           // 启动日志配置
-├── node_modules
-├── package.json
-├── app-service.js              // 启动应用配置
-├── static                      // web静态资源加载
-│   └── initjson
-│       └── config.js         // 提供给前端的配置
-├── test
-├── test-service.js
-└── tools
+├── Readme.md                            // ct-angel introduction&help
+└── ct-angel-train                       // ct-angel use package
+│   ├── data                             // ct-angel data
+│      └── model_data                    // ct-angel model data
+│          └── ct-angel_weights.txt      // model download link file
+│      └── train_images                  // ct-angel model train_images
+│          └── DJ20200112A0189(243).jpg  // train_images sample 
+│      └── train_labels                  // ct-angel model train_labels 
+│          └── DJ20200112A0189(243).jpg  // train_labels sample
+│      └── val_images                    // ct-angel model val_images 
+│          └── DJ20200112A0189(243).jpg  // val_images sample 
+│      └── val_labels                    // ct-angel model val_labels 
+│          └── DJ20200112A0189(243).jpg  // val_labels sample 
+│      └── test_images                   // ct-angel model test_images
+│          └── DJ20200112A0189(243).jpg  // test_images sample
+│      └── test_labels                   // ct-angel model test_labels
+│          └── DJ20200112A0189(243).jpg  // test_labels sample
+│   ├── sample                           // ct-angel prediction sample
+│      └── sample01.jpg                 // sample image
+│   ├── unet_pp                          // unet++ package
+│   └── ct_angel_train.ipynb             // ct-angel-train-code
 ```
 ## 6. About the author
 * Author
