@@ -78,8 +78,8 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
 | Keras | 2.2.4 |
 | Unet++ | / |
 | OpenCV | 3.4.2 |
-| CUDA | 10.1 |
-| CUDnn | 10 |
+| CUDA | 10.0.130 |
+| CUDnn | 7.6.0 |
 ### 4.2 Instructions for use
 #### 4.2.1 Ready to adapt the hardware
 #### 4.2.2 Download and install the required toolkit
@@ -118,8 +118,8 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
    ```
      pip install opencv-python==3.4.2
    ```
-   * [CUDA 10.1](https://developer.nvidia.com/cuda-downloads) https://developer.nvidia.com/cuda-downloads
-   * [CUDnn 10](https://developer.nvidia.com/rdp/cudnn-download) https://developer.nvidia.com/rdp/cudnn-download
+   * [CUDA 10.0.130](https://developer.nvidia.com/cuda-10.0-download-archive) https://developer.nvidia.com/cuda-10.0-download-archive
+   * [CUDnn 7.6.0](https://developer.nvidia.com/rdp/cudnn-download) https://developer.nvidia.com/rdp/cudnn-download
    ```
      Need to register, install after registration.After decompression, place the three files in the corresponding directories of cuda.
    ```
