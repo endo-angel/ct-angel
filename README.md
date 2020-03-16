@@ -124,10 +124,16 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
      Need to register, install after registration.After decompression, place the three files in the corresponding directories of cuda.
    ```
 #### 4.2.3 Download our trained model
-We open sourced two models we trained: the model for extracting valid regions of CT images and the model for detecting suspicious lesions in CT images. The download link is provided below:
+We open sourced two models we trained: the model for extracting valid regions of CT images and the model for detecting suspicious lesions in CT images. Here are the download links for different ways, you can click any of them to download according to your network situation:
 ```
-link：https://pan.baidu.com/s/1OWxNBVvL3kINV1Lf_lrdlA
+_______________________________________________________________________
+Baidu cloud disk link：https://pan.baidu.com/s/1OWxNBVvL3kINV1Lf_lrdlA
 extraction code：q916
+———————————————————————————————————————————————————————————————————————
+Google drive link: https://drive.google.com/open?id=1bWmmCroyXs0VxapeVukvtR5pTlgeOEjh
+_______________________________________________________________________
+Dropbox link: https://www.dropbox.com/s/7l6ocnurn4f1bht/ct-angel-weights.zip?dl=0
+_______________________________________________________________________
 ```
 #### 4.2.4 Download our project
 #### 4.2.5 Run our project locally
