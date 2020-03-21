@@ -137,8 +137,7 @@ _______________________________________________________________________
 ```
 #### 4.2.4 Download our project
 #### 4.2.5 Run our project locally
-A jupyter file named ```ct_angel_train``` is provided in our project. You can follow the prompts of the code comments in the jupyter file to place the training images and corresponding mask images in the corresponding path and folder, and then run a jupyter file 
-to start our project and get the prediction result of your own CT images.
+Two jupyter files are provided in our project: one named ```dcm_2_jpg``` and the other named ```ct_angel_train```. If your CT data is in 16-bit dicom format, you can use the code in ```dcm_2_jpg.ipynb``` to convert them to 8-bit jpg. After that, you can follow the prompts of the code comments in ```ct_angel_train.ipynb``` to place the training images and corresponding mask images in the corresponding path and folder, and then run the jupyter file to start our project and get the prediction result of your own CT images.
 ## 5. Directory Structure
 ```
 ├── Readme.md                            // ct-angel introduction&help
@@ -161,7 +160,8 @@ to start our project and get the prediction result of your own CT images.
 │   ├── sample                           // ct-angel prediction sample
 │      └── sample01.jpg                  // sample image
 │   ├── unet_pp                          // unet++ package
-│   └── ct_angel_train.ipynb             // ct-angel-train-code
+│   ├── ct_angel_train.ipynb             // ct-angel-train-code
+│   └── dcm_2_jpg.ipynb                  // dicom-2-jpg-code
 ```
 ## 6. About the author
 * Author
