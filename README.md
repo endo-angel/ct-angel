@@ -125,13 +125,10 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
    ```
 #### 4.2.3 Download our trained model
 We open sourced two models we trained: the model for extracting valid regions of CT images and the model for detecting suspicious lesions in CT images. You can use 'ct_angel_lung_weights' to extract the valid regions of the CT images, and then use 'ct_angel_lesion_weights' to predict the location of the lesion in the extracted valid regions, which can reduce false positives.
-Our main DICOM original parameters:
-1. Window Width: 1200;
-2. Window Level: -700;
-3. Resolution: 512 * 512.
-You can adjust the parameters according to the actual settings of the CT equipment on your side. This may help reduce false positives.
+
 Here is our usage example:
 ![Usage](http://47.116.58.103/ct-model/static/ct-imgs/usage.png)
+
 Here are the download links for different ways, you can click any of them to download according to your network situation:
 ```
 _______________________________________________________________________
