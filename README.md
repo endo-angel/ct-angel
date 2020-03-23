@@ -124,7 +124,15 @@ Computed tomography (CT) is the preferred imaging method for diagnosing 2019 nov
      Need to register, install after registration.After decompression, place the three files in the corresponding directories of cuda.
    ```
 #### 4.2.3 Download our trained model
-We open sourced two models we trained: the model for extracting valid regions of CT images and the model for detecting suspicious lesions in CT images. Here are the download links for different ways, you can click any of them to download according to your network situation:
+We open sourced two models we trained: the model for extracting valid regions of CT images and the model for detecting suspicious lesions in CT images. You can use 'ct_angel_lung_weights' to extract the valid regions of the CT images, and then use 'ct_angel_lesion_weights' to predict the location of the lesion in the extracted valid regions, which can reduce false positives.
+Our main DICOM original parameters:
+1. Window Width: 1200;
+2. Window Level: -700;
+3. Resolution: 512 * 512.
+You can adjust the parameters according to the actual settings of the CT equipment on your side. This may help reduce false positives.
+Here is our usage example:
+![Usage](http://47.116.58.103/ct-model/static/ct-imgs/usage.png)
+Here are the download links for different ways, you can click any of them to download according to your network situation:
 ```
 _______________________________________________________________________
 Baidu cloud disk link：https://pan.baidu.com/s/1OWxNBVvL3kINV1Lf_lrdlA
@@ -135,6 +143,7 @@ _______________________________________________________________________
 Dropbox link: https://www.dropbox.com/s/7l6ocnurn4f1bht/ct-angel-weights.zip?dl=0
 _______________________________________________________________________
 ```
+
 #### 4.2.4 Download our project
 #### 4.2.5 Run our project locally
 Two jupyter files are provided in our project: one named ```dcm_2_jpg``` and the other named ```ct_angel_train```. If your CT data is in 16-bit dicom format, you can use the code in ```dcm_2_jpg.ipynb``` to convert them to 8-bit jpg. After that, you can follow the prompts of the code comments in ```ct_angel_train.ipynb``` to place the training images and corresponding mask images in the corresponding path and folder, and then run the jupyter file to start our project and get the prediction result of your own CT images.
